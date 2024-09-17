@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2409106060_Much. Trigusni Hermawan_B1_Posttest2"/>
+        <attribute name="authors" value="Acer"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-17 04:15:29 PM"/>
+        <attribute name="created" value="QWNlcjtMQVBUT1AtTlZFNE4yT0g7MjAyNC0wOS0xNjswMjoyMzo1MCBQTTsyNzMy"/>
+        <attribute name="edited" value="QWNlcjtMQVBUT1AtTlZFNE4yT0g7MjAyNC0wOS0xNzswNDoxNToyOSBQTTs2OzI4NTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nama" type="String" array="False" size=""/>
+            <declare name="umur" type="Integer" array="False" size=""/>
+            <declare name="beratBadan, tinggiBadan, totalNilaiNumerik" type="Real" array="False" size=""/>
+            <declare name="gender" type="Boolean" array="False" size=""/>
+            <output expression="&quot;Masukkan Nama Anda&quot;" newline="True"/>
+            <input variable="nama"/>
+            <output expression="&quot;Masukkan Umur Anda&quot;" newline="True"/>
+            <input variable="umur"/>
+            <output expression="&quot;Masukkan Berat Badan Anda (Kg)&quot;" newline="True"/>
+            <input variable="beratBadan"/>
+            <output expression="&quot;Masukkan Tinggi Badan Anda (Cm)&quot;" newline="True"/>
+            <input variable="tinggiBadan"/>
+            <input variable="gender"/>
+            <assign variable="totalNilaiNumerik" expression="umur + beratBadan + tinggiBadan"/>
+            <output expression="&quot;Nama: &quot; &amp; nama" newline="True"/>
+            <output expression="&quot;Umur: &quot; &amp; umur" newline="True"/>
+            <output expression="&quot;Jenis Kelamin: &quot; &amp; gender" newline="True"/>
+            <output expression="&quot;Berat Badan: &quot; &amp; beratBadan &amp; &quot; Kg&quot;" newline="True"/>
+            <output expression="&quot;Tinggi Badan: &quot; &amp; tinggiBadan &amp; &quot; Cm&quot;" newline="True"/>
+            <output expression="&quot;Penjumlahan Variabel Numerik: &quot; &amp; totalNilaiNumerik" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

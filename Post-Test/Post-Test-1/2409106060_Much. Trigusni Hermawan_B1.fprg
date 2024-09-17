@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="flowchart 2409106060_Much. Trigusni Hermawan_B1"/>
+        <attribute name="authors" value="Acer"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-11 12:00:48 AM"/>
+        <attribute name="created" value="QWNlcjtMQVBUT1AtTlZFNE4yT0g7MjAyNC0wOS0wOTsxMjo0NDowMyBBTTsyNzIx"/>
+        <attribute name="edited" value="QWNlcjtMQVBUT1AtTlZFNE4yT0g7MjAyNC0wOS0xMTsxMjowMDo0OCBBTTs0OzI4MjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="diskon, totalBelanja, grandTotal" type="Integer" array="False" size=""/>
+            <input variable="totalBelanja"/>
+            <if expression="totalbelanja &gt;= 1000000">
+                <then>
+                    <assign variable="diskon" expression="20"/>
+                </then>
+                <else>
+                    <if expression="totalbelanja &gt;= 500000">
+                        <then>
+                            <assign variable="diskon" expression="10"/>
+                        </then>
+                        <else>
+                            <if expression="totalbelanja &gt;= 100000">
+                                <then>
+                                    <assign variable="diskon" expression="5"/>
+                                </then>
+                                <else>
+                                    <assign variable="diskon" expression="0"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="grandTotal" expression="HitungDiskon(totalBelanja, diskon)"/>
+            <output expression="&quot;Total Belanja: Rp&quot; &amp; totalBelanja" newline="True"/>
+            <output expression="&quot;Diskon: &quot; &amp; diskon &amp; &quot;%&quot;" newline="True"/>
+            <output expression="&quot;Grand Total: Rp&quot; &amp; grandTotal" newline="True"/>
+        </body>
+    </function>
+    <function name="HitungDiskon" type="Integer" variable="hasil">
+        <parameters>
+            <parameter name="harga" type="Integer" array="False"/>
+            <parameter name="diskon" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="hasil" type="Integer" array="False" size=""/>
+            <assign variable="hasil" expression="harga - (harga * diskon / 100)"/>
+        </body>
+    </function>
+</flowgorithm>
