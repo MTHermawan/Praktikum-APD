@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2409106060_Much.TrigusniHermawan_B1_POSTTEST3"/>
+        <attribute name="authors" value="Acer"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-25 09:39:35 AM"/>
+        <attribute name="created" value="QWNlcjtMQVBUT1AtTlZFNE4yT0g7MjAyNC0wOS0yMzswODozNjo1MSBQTTsyNzQx"/>
+        <attribute name="edited" value="QWNlcjtMQVBUT1AtTlZFNE4yT0g7MjAyNC0wOS0yNTswOTozOTozNSBBTTs4OzI4NDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pilihan" type="String" array="False" size=""/>
+            <output expression="&quot;- Pilih Menu Operasi Luas/Keliling Bangun Ruang -&quot; &amp; ToChar(013) &amp; &quot;1. Luas Balok | 2. Keliling Balok | 3. Luas Bola | 4. Luas Limas Segi Empat&quot;" newline="True"/>
+            <input variable="pilihan"/>
+            <if expression="pilihan == &quot;1&quot;">
+                <then>
+                    <call expression="LuasBalok()"/>
+                </then>
+                <else>
+                    <if expression="pilihan == &quot;2&quot;">
+                        <then>
+                            <call expression="KelilingBalok()"/>
+                        </then>
+                        <else>
+                            <if expression="pilihan == &quot;3&quot;">
+                                <then>
+                                    <call expression="LuasBola()"/>
+                                </then>
+                                <else>
+                                    <if expression="pilihan == &quot;4&quot;">
+                                        <then>
+                                            <call expression="LuasLimasSegiEmpat()"/>
+                                        </then>
+                                        <else>
+                                            <if expression="pilihan == &quot;n&quot; or&#13;&#10;pilihan == &quot;N&quot;">
+                                                <then>
+                                                    <output expression="&quot;Program berhasil dihentikan!&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Tidak ada pilihan menu yang cocok&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="KelilingBalok" type="None" variable="hasil">
+        <parameters/>
+        <body>
+            <declare name="panjang, lebar, tinggi, hasil" type="Real" array="False" size=""/>
+            <output expression="&quot;Masukkan nilai panjang balok (cm):&quot;" newline="True"/>
+            <input variable="panjang"/>
+            <output expression="&quot;Masukkan nilai lebar balok (cm):&quot;" newline="True"/>
+            <input variable="lebar"/>
+            <output expression="&quot;Masukkan nilai tinggi balok (cm):&quot;" newline="True"/>
+            <input variable="tinggi"/>
+            <assign variable="hasil" expression="4 * (panjang + lebar + tinggi)"/>
+            <output expression="&quot;Panjang = &quot; &amp; panjang &amp; &quot; cm&quot;&amp; ToChar(013) &amp;&#13;&#10;&quot;Lebar = &quot; &amp; lebar &amp; &quot; cm&quot; &amp; ToChar(013) &amp;&#13;&#10;&quot;Tinggi = &quot; &amp; tinggi &amp; &quot; cm&quot; &amp; ToChar(013) &amp;&#13;&#10;&quot;Keliling Balok = &quot; &amp; hasil &amp; &quot; cm&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="LuasBalok" type="None" variable="hasil">
+        <parameters/>
+        <body>
+            <declare name="panjang, lebar, tinggi, hasil" type="Real" array="False" size=""/>
+            <output expression="&quot;Masukkan nilai panjang balok (cm):&quot;" newline="True"/>
+            <input variable="panjang"/>
+            <output expression="&quot;Masukkan nilai lebar balok (cm):&quot;" newline="True"/>
+            <input variable="lebar"/>
+            <output expression="&quot;Masukkan nilai tinggi balok (cm):&quot;" newline="True"/>
+            <input variable="tinggi"/>
+            <assign variable="hasil" expression="2 * panjang * lebar + 2 * panjang * tinggi + 2 * lebar * tinggi"/>
+            <output expression="&quot;Panjang = &quot; &amp; panjang &amp; &quot; cm&quot;&amp; ToChar(013) &amp;&#13;&#10;&quot;Lebar = &quot; &amp; lebar &amp; &quot; cm&quot; &amp; ToChar(013) &amp;&#13;&#10;&quot;Tinggi = &quot; &amp; tinggi &amp; &quot; cm&quot; &amp; ToChar(013) &amp;&#13;&#10;&quot;Luas Balok = &quot; &amp; hasil &amp; &quot; cm&#178;&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="LuasBola" type="None" variable="hasil">
+        <parameters/>
+        <body>
+            <declare name="radius, hasil" type="Real" array="False" size=""/>
+            <output expression="&quot;Masukkan nilai jari-jari/radius bola (cm):&quot;" newline="True"/>
+            <input variable="radius"/>
+            <assign variable="hasil" expression="4 * 3.14 * (radius ^ 2)"/>
+            <output expression="&quot;Jari-jari = &quot; &amp; radius &amp; &quot; cm&quot;&amp; ToChar(013) &amp;&#13;&#10;&quot;Luas Permukaan Bola = &quot; &amp; hasil &amp; &quot; cm&#178;&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="LuasLimasSegiEmpat" type="None" variable="hasil">
+        <parameters/>
+        <body>
+            <declare name="panjangAlas, tinggiSisiTegak, hasil" type="Real" array="False" size=""/>
+            <output expression="&quot;Masukkan nilai panjang alas/persegi (cm):&quot;" newline="True"/>
+            <input variable="panjangAlas"/>
+            <output expression="&quot;Masukkan nilai tinggi sisi tegak/segitiga (cm):&quot;" newline="True"/>
+            <input variable="tinggiSisiTegak"/>
+            <assign variable="hasil" expression="(panjangAlas * panjangAlas) + (4 * panjangAlas * tinggiSisiTegak / 2)"/>
+            <output expression="&quot;Panjang Alas = &quot; &amp; panjangAlas &amp; &quot; cm&quot;&amp; ToChar(013) &amp;&#13;&#10;&quot;Tinggi Sisi Tegak = &quot; &amp; tinggiSisiTegak &amp; &quot; cm&quot; &amp; ToChar(013) &amp;&#13;&#10;&quot;Luas Limas Segi Empat = &quot; &amp; hasil &amp; &quot; cm&#178;&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
