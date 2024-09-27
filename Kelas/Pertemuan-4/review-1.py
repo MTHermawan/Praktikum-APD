@@ -1,13 +1,16 @@
+skalaMatriks = 8
 print("Matriks")
-for baris in range(5):
-    for kolom in range(5):
+for baris in range(skalaMatriks):
+    for kolom in range(skalaMatriks):
         print("*", end=" ")
     print()
 print()
 
+
+skalaSegitigaSikuSiku = 8
 print("Segitiga Siku-Siku")
-for baris in range(5):
-    for kolom in range(5):
+for baris in range(skalaSegitigaSikuSiku):
+    for kolom in range(skalaSegitigaSikuSiku):
         if kolom < baris + 1:
             print("*", end=" ")
     print()
@@ -15,14 +18,12 @@ print()
 
 print("Segitiga Sama Kaki")
 
-panjangBaris = 5
-panjangKolom = 5
-while panjangBaris >= 0:
-    for kolom in range(panjangKolom):
-        if kolom < panjangBaris:
+skalaSegitigaSamaKaki = 8
+for baris in range(skalaSegitigaSamaKaki, 0, -1):
+    for kolom in range(skalaSegitigaSamaKaki):
+        if kolom < baris - 1:
             print(end=" ")
         else:
             print("*", end=" ")
     print()
-    panjangBaris -= 1
 print()
