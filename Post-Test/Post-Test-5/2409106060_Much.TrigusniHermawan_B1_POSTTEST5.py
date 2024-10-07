@@ -555,9 +555,11 @@ while pilihan.lower() != "n":
         if (riwayatHalaman[len(riwayatHalaman) - 1] != halaman):
             riwayatHalaman.append(halaman)
         postForumTerfilter = []
+        listModeratorForum = []
         moderator = False
 
         for i, momod in enumerate(forum[forumDipilih][2]):
+            listModeratorForum.append(momod)
             if (pengguna[indeksPengguna] == momod):
                 moderator = True
         if moderator == False and pengguna[indeksPengguna][2] != "admin":
@@ -643,6 +645,10 @@ while pilihan.lower() != "n":
             # [Nomor, indeks balasan]
         ]
 
+        if (len(postDipilih) < 1):
+            halaman = "forum post"
+            break
+        
         print(f"> {username} {"="*30}")
         print(f"|| {post[postDipilih[1]][1]} ||")
         print()
@@ -654,11 +660,22 @@ while pilihan.lower() != "n":
             if (len(komentarPost[2]) == 1 and komentarPost[2][0] == post[postDipilih[1]]):
                 nomor += 1
                 if nomor != 1: print()
-                print(f"> {nomor}. {komentarPost[0][0]}: {komentarPost[1]}")
+                komentarMod = False
+                for j, cekMod in enumerate(forum[forumDipilih][2]):
+                    if (komentarPost[0][0] == cekMod[0]):
+                        komentarMod = True
+                        break
+                usernameKomentar = komentarPost[0][0] + (" (Admin)" if komentarPost[0][2] == "admin" else " (Moderator)" if komentarMod else "")
+                print(f"> {nomor}. {usernameKomentar}: {komentarPost[1]}")
                 komentarPostTerfilter.append([nomor, i])
-                for j, balasanKomentar in enumerate(balasan):
+                for k, balasanKomentar in enumerate(balasan):
+                    for l, cekMod in enumerate(forum[forumDipilih][2]):
+                        if (balasanKomentar[0][0] == cekMod[0]):
+                            komentarMod = True
+                            break
+                    usernameKomentar = balasanKomentar[0][0] + (" (Admin)" if balasanKomentar[0][2] == "admin" else " (Moderator)" if komentarMod else "")
                     if (len(balasanKomentar[2]) == 2 and i == balasanKomentar[2][1]):
-                        print(f"  +--{"-"*(len(str(nomor)))}> {balasanKomentar[0][0]}: {balasanKomentar[1]}")
+                        print(f"  +--{"-"*(len(str(nomor)))}> {usernameKomentar}: {balasanKomentar[1]}")
 
         print(f"{"-"*25}")
         if guest:
