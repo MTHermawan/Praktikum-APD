@@ -1,16 +1,18 @@
 import os
 
+# Deklarasi Variabel
 level = ("admin", "user")
 pengguna = [
     # [Username, Password, Level/Role]
     ["Admin", "admin", level[0]],
     ["user", "user", level[1]]
 ]
+
 guest = False
 indeksPengguna = -1
 pilihan = ""
 halaman = "login"
-riwayatHalaman = ["login"]
+riwayatHalaman = [halaman]
 forum = [
     # [Judul Forum, Deskripsi, Moderator[]]
     ["Gaming", "Lorem gaming ipsum", [pengguna[0]]],
@@ -20,7 +22,9 @@ forum = [
 forumDipilih = 0
 post = [
     # [Author, Judul Postingan, Konten Postingan, Indeks Forum]
-    [pengguna[1], "Pra-ISO 2024 Resmi Tamat", "Setelah 5-6 minggu derita penugasan Pra-ISO, akhirnya tidak ada kegiatan di weekend dan penugasan lagi :yahahaha:", forum[2]]
+    [pengguna[1],
+    "Pra-ISO 2024 Resmi Tamat",
+    "Setelah 5-6 minggu derita penugasan Pra-ISO, akhirnya tidak ada kegiatan di weekend dan penugasan lagi :yahahaha:", forum[2]]
 ]
 postDipilih = []
 balasan = [
@@ -30,6 +34,8 @@ balasan = [
 ]
 
 while pilihan.lower() != "n":
+    # Isi Semua Halaman Program
+
     # Halaman Log In
     while halaman == "login":
         guest = False
@@ -210,6 +216,7 @@ while pilihan.lower() != "n":
         else:
             input("Pilihan Tidak Valid...!")
 
+    # Halaman Dashboard
     while halaman == "dashboard" and pengguna[indeksPengguna][2] == "admin":
         os.system("cls || clear")
         if (riwayatHalaman[len(riwayatHalaman) - 1] != halaman):
@@ -228,6 +235,7 @@ while pilihan.lower() != "n":
         pilihan = "b"
         break
 
+    # Halaman Manajaemen Penggna
     while halaman == "pengguna" and pengguna[indeksPengguna][2] == "admin":
         os.system("cls || clear")
         if (riwayatHalaman[len(riwayatHalaman) - 1] != halaman):
@@ -359,7 +367,7 @@ while pilihan.lower() != "n":
                         input("Pengguna Berhasil Diedit...!")
                         break
                     else:
-                        input("Gagal menambahkan Pengguna...!")
+                        input("Gagal Mengedit Pengguna...!")
                         break
         elif pilihan.lower() == "d":
             pilihan = input("Pilih pengguna yang ingin dihapus: ")
@@ -784,7 +792,7 @@ while pilihan.lower() != "n":
             halaman = ""
             break
         else:
-            input("Pilihan Tidak Valid...!")
+            input("Pilihan Tidak Valid...!")    
 
     # Kembali ke halaman sebelumnya
     if pilihan.lower() == "b":
