@@ -1,5 +1,3 @@
-import os
-
 level = {
     0: "admin",
     1: "user"
@@ -53,45 +51,6 @@ balasan = {
         "konteks": {
             "post": "Lorem Ipsum",
             "balasan": ["0"]
-        }
-    },
-    "2" : {
-        "author": "user",
-        "konten": "P",
-        "konteks": {
-            "post": "Lorem Ipsum",
-            "balasan": ["0", "1"]
-        }
-    },
-    "3" : {
-        "author": "user",
-        "konten": "P",
-        "konteks": {
-            "post": "Lorem Ipsum",
-            "balasan": ["0", "1"]
-        }
-    },
-    "4" : {
-        "author": "user",
-        "konten": "P",
-        "konteks": {
-            "post": "Lorem Ipsum",
-        }
-    },
-    "5" : {
-        "author": "user",
-        "konten": "P",
-        "konteks": {
-            "post": "Lorem Ipsum",
-            "balasan": ["0", "1", "2"]
-        }
-    },
-    "6" : {
-        "author": "user",
-        "konten": "P",
-        "konteks": {
-            "post": "Lorem Ipsum",
-            "balasan": ["0", "1", "2", "5"]
         }
     }
 }
@@ -154,7 +113,10 @@ def KomentarForum(_post):
 def TampilkanKomentar(_judulPost):
     for id, items in KomentarForum(_judulPost).items():
         level = balasan[id]["konteks"].get("balasan")
-        badge = "(Admin)" if CekAdmin(balasan[id]["author"]) else "(Moderator)" if CekModeratorForum(forum[post[_judulPost]["forum"]], balasan[id]["author"]) else ""
+        if CekAdmin(balasan[id]["author"]):
+            badge = "(Admin)"
+        elif CekModeratorForum(forum[post[_judulPost]["forum"]], balasan[id]["author"]):
+            badge = "(Moderator)"
         content = f"{items['nomor']}. {balasan[id]['author']} {f"{badge} " if badge else ""}: {balasan[id]['konten']}"
         if not level:
             if items["nomorUtama"] > 1: print()

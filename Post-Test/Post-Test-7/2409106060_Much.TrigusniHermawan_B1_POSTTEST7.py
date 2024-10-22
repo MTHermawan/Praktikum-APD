@@ -41,11 +41,8 @@ def Logout():
     return halaman
 
 while pilihan.lower() != "n":
-    # Isi Semua Halaman Program
-
     # Halaman Log In
     while halaman == "login" and not CekLogin():
-        guest = False
         BersihkanTerminal()
 
         garis()
@@ -218,7 +215,7 @@ while pilihan.lower() != "n":
             garis("-", 30)
             print()
             input("Kembali ke Menu Utama...")
-            pilihan = "b"
+            halaman = "menu utama"
             break
 
         # Halaman Manajemen Penggna
@@ -429,7 +426,7 @@ while pilihan.lower() != "n":
             postForumTerfilter = []
             moderator = CekModeratorForum(forum[forumDipilih], usernamePengguna)
 
-            if not moderator or not CekAdmin(usernamePengguna):
+            if not moderator and not CekAdmin(usernamePengguna):
                 halaman = "forum"
                 break
 
@@ -524,7 +521,7 @@ while pilihan.lower() != "n":
             listModeratorForum = []
             moderator = CekModeratorForum(forum[forumDipilih], usernamePengguna)
 
-            if not moderator or not CekAdmin(usernamePengguna):
+            if not moderator and not CekAdmin(usernamePengguna):
                 halaman = "forum"
                 break
 
