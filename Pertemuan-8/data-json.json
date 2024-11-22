@@ -1,0 +1,17 @@
+[
+    {
+        "nama": "Steven",
+        "umur": 28,
+        "jenisKelamin": "pria"
+    },
+    {
+        "nama": "Michael",
+        "umur": 25,
+        "jenisKelamin": "pria"
+    },
+    {
+        "nama": "Hermawan",
+        "umur": "18",
+        "jenis_kelamin": "pria"
+    }
+]
