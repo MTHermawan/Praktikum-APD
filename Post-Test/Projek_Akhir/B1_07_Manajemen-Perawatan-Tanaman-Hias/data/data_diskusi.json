@@ -1,0 +1,100 @@
+[
+    {
+        "judul": "Meletakkan Monstera di dalam kamar",
+        "tanaman": "Monstera",
+        "penulis": "user",
+        "konten": "Saya ingin menanam Monstera di dalam kamar saya. Apakah Monstera bisa diletakkan di dalam kamar? Apakah Monstera memerlukan cahaya matahari langsung?",
+        "tanggal": "13-11-2024 17:29",
+        "jawaban": [
+            {
+                "penulis": "MTHermawan",
+                "konten": "Monstera bisa diletakkan di dalam kamar, namun memerlukan cahaya matahari yang cukup.",
+                "tanggal": "13-11-2024 19:20:57"
+            }
+        ]
+    },
+    {
+        "judul": "Pemupukan Aglaonema",
+        "tanaman": "Sri Rejeki",
+        "penulis": "user",
+        "konten": "Kapan waktu yang tepat untuk memupuk Aglaonema?",
+        "tanggal": "13-11-2024 20:02",
+        "jawaban": [
+            {
+                "penulis": "MTHermawan",
+                "konten": "Pemupukan Aglaonema dilakukan 1 bulan sekali.",
+                "tanggal": "13-11-2024 20:23:35"
+            }
+        ]
+    },
+    {
+        "judul": "Media Tanam untuk Calathea",
+        "tanaman": "Calathea",
+        "penulis": "HackerTzy",
+        "konten": "Apakah Calathea bisa ditanam di tanah berpasir?",
+        "tanggal": "13-11-2024 20:15",
+        "jawaban": [
+            {
+                "penulis": "MTHermawan",
+                "konten": "Calathea bisa ditanam di tanah berpasir.",
+                "tanggal": "13-11-2024 21:24:12"
+            }
+        ]
+    },
+    {
+        "judul": "Pemupukan Kadaka",
+        "tanaman": "Kadaka",
+        "penulis": "user",
+        "konten": "Kapan waktu yang tepat untuk memupuk Kadaka?",
+        "tanggal": "14-11-2024 19:30",
+        "jawaban": [
+            {
+                "penulis": "MTHermawan",
+                "konten": "Pemupukan Kadaka dilakukan 1 bulan sekali.",
+                "tanggal": "14-11-2024 20:23:35"
+            }
+        ]
+    },
+    {
+        "judul": "Pemupukan Daun Dollar",
+        "tanaman": "Daun Dollar",
+        "penulis": "user",
+        "konten": "Kapan waktu yang tepat untuk memupuk Daun Dollar?",
+        "tanggal": "14-11-2024 17:23",
+        "jawaban": [
+            {
+                "penulis": "MTHermawan",
+                "konten": "Pemupukan Daun Dollar dilakukan 3 bulan sekali.",
+                "tanggal": "14-11-2024 20:56:49"
+            }
+        ]
+    },
+    {
+        "judul": "Pemupukan Begonia",
+        "tanaman": "Begonia",
+        "penulis": "user",
+        "konten": "Kapan waktu yang tepat untuk memupuk Begonia?",
+        "tanggal": "14-11-2024 19:30",
+        "jawaban": [
+            {
+                "penulis": "MTHermawan",
+                "konten": "Pemupukan Begonia dilakukan 2 minggu sekali.",
+                "tanggal": "14-11-2024 20:12:43"
+            }
+        ]
+    },
+    {
+        "judul": "Tempat yang cocok untuk menaruh Sri Rejeki",
+        "tanaman": "Sri Rejeki",
+        "penulis": "user",
+        "konten": "Halo, saya ingin menanam Sri Rejeki. Apakah Sri Rejeki bisa diletakkan dalam ruangan seperti kamar?",
+        "tanggal": "22-11-2024 19:29",
+        "jawaban": [
+            {
+                "penulis": "admin",
+                "konten": "Sri Rejeki bisa diletakkan di dalam ruangan seperti kamar.",
+                "tanggal": "22-11-2024 19:41:05"
+            }
+        ]
+    }
+]

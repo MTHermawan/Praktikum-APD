@@ -1,0 +1,137 @@
+[
+    {
+        "nama": "Bunga Kamboja",
+        "jenis": "Bonsai Bunga",
+        "jadwal_siram": "3 Hari Sekali",
+        "min_suhu": 24.0,
+        "max_suhu": 35.0,
+        "pemupukan": "2 Bulan Sekali",
+        "media_tanam": "Tanah Berpasir"
+    },
+    {
+        "nama": "Sirih Gading",
+        "jenis": "Tropis Merambat",
+        "jadwal_siram": "4 Hari Sekali",
+        "min_suhu": 20.0,
+        "max_suhu": 30.0,
+        "pemupukan": "2 Bulan Sekali",
+        "media_tanam": "Tanah"
+    },
+    {
+        "nama": "Lidah Buaya",
+        "jenis": "Sukulen",
+        "jadwal_siram": "1 Minggu Sekali",
+        "min_suhu": 15.0,
+        "max_suhu": 25.0,
+        "pemupukan": "3 Bulan Sekali",
+        "media_tanam": "Tanah Berpasir"
+    },
+    {
+        "nama": "Lidah Mertua",
+        "jenis": "Sukulen",
+        "jadwal_siram": "1 Minggu Sekali",
+        "min_suhu": 15.0,
+        "max_suhu": 30.0,
+        "pemupukan": "3 Bulan Sekali",
+        "media_tanam": "Tanah Berpasir"
+    },
+    {
+        "nama": "Suplir",
+        "jenis": "Tanaman Paku",
+        "jadwal_siram": "1 Hari Sekali",
+        "min_suhu": 18.0,
+        "max_suhu": 24.0,
+        "pemupukan": "1 Bulan Sekali",
+        "media_tanam": "Tanah Humus"
+    },
+    {
+        "nama": "Daun Puring",
+        "jenis": "Hias Berdaun Warna",
+        "jadwal_siram": "2 Hari Sekali",
+        "min_suhu": 20.0,
+        "max_suhu": 32.0,
+        "pemupukan": "1 Bulan Sekali",
+        "media_tanam": "Tanah Berpasir"
+    },
+    {
+        "nama": "Lili Paris",
+        "jenis": "Sukulen",
+        "jadwal_siram": "3 Hari Sekali",
+        "min_suhu": 18.0,
+        "max_suhu": 27.0,
+        "pemupukan": "2 Bulan Sekali",
+        "media_tanam": "Tanah Subur"
+    },
+    {
+        "nama": "Pucuk Merah",
+        "jenis": "Tanaman Semak",
+        "jadwal_siram": "2 Hari Sekali",
+        "min_suhu": 22.0,
+        "max_suhu": 32.0,
+        "pemupukan": "1 Bulan Sekali",
+        "media_tanam": "Tanah Subur"
+    },
+    {
+        "nama": "Kuping Gajah",
+        "jenis": "Tropis Berdaun Besar",
+        "jadwal_siram": "3 Hari Sekali",
+        "min_suhu": 18.0,
+        "max_suhu": 26.0,
+        "pemupukan": "1 Bulan Sekali",
+        "media_tanam": "Tanah Subur"
+    },
+    {
+        "nama": "Monstera",
+        "jenis": "Tropis",
+        "jadwal_siram": "3 Hari Sekali",
+        "min_suhu": 18.0,
+        "max_suhu": 30.0,
+        "pemupukan": "2 Bulan Sekali",
+        "media_tanam": "Tanah"
+    },
+    {
+        "nama": "Calathea",
+        "jenis": "Tropis",
+        "jadwal_siram": "3 Hari Sekali",
+        "min_suhu": 18.0,
+        "max_suhu": 24.0,
+        "pemupukan": "1 Bulan Sekali",
+        "media_tanam": "Tanah Gambut"
+    },
+    {
+        "nama": "Begonia",
+        "jenis": "Tanaman Hias Berbunga",
+        "jadwal_siram": "2 Hari Sekali",
+        "min_suhu": 18.0,
+        "max_suhu": 24.0,
+        "pemupukan": "2 Minggu Sekali",
+        "media_tanam": "Tanah Berpasir"
+    },
+    {
+        "nama": "Kadaka",
+        "jenis": "Tanaman Paku",
+        "jadwal_siram": "3 Hari Sekali",
+        "min_suhu": 18.0,
+        "max_suhu": 28.0,
+        "pemupukan": "1 Bulan Sekali",
+        "media_tanam": "Tanah Humus"
+    },
+    {
+        "nama": "Daun Dollar",
+        "jenis": "Sukulen",
+        "jadwal_siram": "1 Minggu Sekali",
+        "min_suhu": 15.0,
+        "max_suhu": 30.0,
+        "pemupukan": "3 Bulan Sekali",
+        "media_tanam": "Tanah Berpasir"
+    },
+    {
+        "nama": "Sri Rejeki",
+        "jenis": "Tropis Merambat",
+        "jadwal_siram": "1 Minggu Sekali",
+        "min_suhu": 23.0,
+        "max_suhu": 28.0,
+        "pemupukan": "2 Bulan Sekali",
+        "media_tanam": "Tanah Subur dan Berpasir"
+    }
+]

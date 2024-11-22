@@ -1,0 +1,74 @@
+[
+    {
+        "username": "Dimas",
+        "password": "057",
+        "role": "admin",
+        "status": "aktif"
+    },
+    {
+        "username": "Richo",
+        "password": "062",
+        "role": "admin",
+        "status": "aktif"
+    },
+    {
+        "username": "MTHermawan",
+        "password": "060",
+        "role": "admin",
+        "status": "aktif"
+    },
+    {
+        "username": "admin",
+        "password": "admin123",
+        "role": "admin",
+        "status": "aktif"
+    },
+    {
+        "username": "moderator",
+        "password": "moderator123",
+        "role": "moderator",
+        "status": "aktif"
+    },
+    {
+        "username": "user",
+        "password": "user",
+        "role": "user",
+        "status": "aktif"
+    },
+    {
+        "username": "tes",
+        "password": "tes",
+        "role": "user",
+        "status": "aktif"
+    },
+    {
+        "username": "tes2",
+        "password": "tes2",
+        "role": "user",
+        "status": "diblokir"
+    },
+    {
+        "username": "Remptyh",
+        "password": "Determination",
+        "role": "moderator",
+        "status": "aktif"
+    },
+    {
+        "username": "HackerTzy",
+        "password": "admin123",
+        "role": "user",
+        "status": "aktif"
+    },
+    {
+        "username": "userbaru",
+        "password": "userbaru123",
+        "role": "user",
+        "status": "aktif"
+    },
+    {
+        "username": "Budi",
+        "password": "budi2006",
+        "role": "user",
+        "status": "diblokir"
+    }
+]
